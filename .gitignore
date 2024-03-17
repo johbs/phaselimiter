@@ -40,3 +40,8 @@ version.h
 /resource/sound_quality2_cache
 /build
 /built
+
+# other
+.history
+*.mp3
+*.wav
