@@ -1,7 +1,21 @@
 #!/bin/bash
 
-echo 'run this script in root of phaselimiter repository'
-echo 'close xcode before run this script'
+# This won't work on macOS with arm chip!
+
+# Install xcode from app store first
+
+# Instal dependencies
+brew install cmake
+brew install boost
+brew install python3
+brew install python3-pip 
+brew install pipenv
+sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+
+# Install phaselimiter
+xcodebuild \
+    -project phaselimiter.xcodeproj \
+    -configuration Release
 
 rm -rf CMakeFiles CMakeCache.txt deps/gflags/CMakeFiles \
   && cmake -GXcode -DCMAKE_BUILD_TYPE=Release .
