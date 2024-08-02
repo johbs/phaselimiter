@@ -21,7 +21,7 @@ todo
 
 prebuilt linux executables are available here
 
-https://github.com/ai-mastering/phaselimiter/releases
+https://github.com/johbs/phaselimiter/releases
 
 ## runtime dependencies
 
